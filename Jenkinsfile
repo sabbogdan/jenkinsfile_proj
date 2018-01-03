@@ -1,4 +1,4 @@
-pipeline {
+
 node("Slave 1") {
    def mvnHome
    stage('Preparation') { 
@@ -21,5 +21,4 @@ node("Slave 1") {
 //      junit '**/target/surefire-reports/TEST-*.xml'
  archiveArtifacts 'target/*.jar'
  }
-}
 }
